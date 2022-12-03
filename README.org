@@ -5,8 +5,8 @@ Using Ruby as of day 2, but this may change depending on the difficulty, mood, f
 ** Running
 The =.rb= files can be run directly as executable
 #+BEGIN_SRC bash
-  $ chmod +x day1.rb < input
-  $ ./day1.rb
+  $ chmod +x day1.rb
+  $ ./day1.rb < input
 #+END_SRC
 
 or using a ruby interpreter
