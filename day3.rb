@@ -3,7 +3,7 @@
 alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 sum = 0
 
-IO.foreach("input") do |comp|
+while comp = gets
   comp = comp.chomp
   sum += (comp[0..(comp.length / 2) - 1].chars & comp[(comp.length / 2)..comp.length].chars).map {|c| alpha.index(c) + 1}.sum
 end

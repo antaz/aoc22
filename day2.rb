@@ -5,7 +5,8 @@ values = { "A X" => 4, "A Y" => 8, "A Z" => 3,
            "C X" => 7, "C Y" => 2, "C Z" => 6
          }
 sum = 0
-IO.foreach("input") do |round|
+
+while round = gets
   sum += values[round.chomp]
 end
 

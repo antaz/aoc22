@@ -2,7 +2,8 @@
 
 max = 0
 sum = 0
-IO.foreach("input") do |cal|
+
+while cal = gets
   if cal.chomp != ""
     sum += cal.chomp.to_i
   else

@@ -2,7 +2,8 @@
 
 sum = 0
 elves = []
-IO.foreach("input") do |cal|
+
+while cal = gets
   if cal.chomp != ""
     sum += cal.chomp.to_i
   else
