@@ -33,5 +33,4 @@ while op = gets
   end
 end
 
-puts crane.inspect
 puts crane.map(&:last).join("")
