@@ -14,3 +14,6 @@ or using a ruby interpreter
   $ ruby day1.rb < input
 #+END_SRC
 
+** AI ?
+Tempting not gonna lie! but is it /halal/ ?
+smash that `star` button above if you don't want to make me do it.
