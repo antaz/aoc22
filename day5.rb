@@ -11,17 +11,12 @@
 # [["M", "C", "D"]]
 # [["P" , " ", " "]]
 #
-# apply the stack operations (push, pop)
-#
-# [["M"]]
-# [["C"]]
-# [["P" , "Z", "N", "D"]]
-#
-# get the last element of each array "MCD"
+# using array slices to manipulate the arrays instead of push/pop
 #
 
 
 crane = []
+
 while crates = gets
   if crates.start_with?(" 1")
     break
@@ -34,10 +29,9 @@ crane = crane.transpose.map {|v| v.reverse.select { |v| v != " "} }
 while op = gets
   if op.start_with?("move")
     op = op.match /^move (\d+) from (\d+) to (\d+)/
-    for i in 1..(op[1].to_i)
-      crane[op[3].to_i - 1].push(crane[op[2].to_i - 1].pop())
-    end
+    crane[op[3].to_i - 1] += crane[op[2].to_i - 1].slice!(-(op[1].to_i)..).reverse
   end
 end
 
+puts crane.inspect
 puts crane.map(&:last).join("")
