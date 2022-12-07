@@ -4,16 +4,19 @@ Using Ruby as of day 2, but this may change depending on the difficulty, mood, f
 
 ** Running
 The =.rb= files can be run directly as executable
-#+BEGIN_SRC bash
+
+#+BEGIN_SRC shell
   $ chmod +x day1.rb
   $ ./day1.rb < input
 #+END_SRC
 
 or using a ruby interpreter
-#+BEGIN_SRC bash
+
+#+BEGIN_SRC shell
   $ ruby day1.rb < input
 #+END_SRC
 
 ** AI ?
 Tempting not gonna lie! but is it /halal/ ?
-smash that `star` button above if you don't want to make me do it.
+
+Smash that `star` button above if you don't want to make me do it.
